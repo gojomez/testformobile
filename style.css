@@ -11,7 +11,7 @@ body, html {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('c:/Users/joshu/Downloads/backgroundimage.jpg'); /* Correct path */
+  background-image: url('https://i.postimg.cc/9XZGQ5mQ/backgroundimage.jpg'); /* Correct path */
   background-size: cover; /* Ensures it covers the area */
   background-position: center;
   z-index: -1; /* Places it behind other elements */
