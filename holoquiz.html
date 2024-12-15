@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hololive EN Quiz</title>
+    <link rel="stylesheet" href="holoquiz.css">
+</head>
+<body>
+    <div class="container">
+        <h1 style="color: white;">Which Hololive EN Member<br> Are You?</h1>
+        <form id="quizForm">
+            <!-- Question 1 -->
+            <div class="question-page" id="question1">
+                <p>1. What type of food do you enjoy the most?</p>
+                <div class="options">
+                    <input type="radio" id="q1a" name="question1" value="A">
+                    <label for="q1a" class="option-box">Seafood</label>
+                    
+                    <input type="radio" id="q1b" name="question1" value="B">
+                    <label for="q1b" class="option-box">Sweets and junkfood</label>
+                    
+                    <input type="radio" id="q1c" name="question1" value="C">
+                    <label for="q1c" class="option-box">Healthy Foods</label>
+                    
+                    <input type="radio" id="q1d" name="question1" value="D">
+                    <label for="q1d" class="option-box">Fast Food</label>
+                    
+                    <input type="radio" id="q1e" name="question1" value="E">
+                    <label for="q1e" class="option-box">Beverages</label>
+                </div>
+                <button type="button" onclick="nextQuestion(2)">Next</button>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question-page" id="question2" style="display: none;">
+                <p>2. Which activity do you prefer in your free time?</p>
+                <div class="options">
+                    <input type="radio" id="q2a" name="question2" value="A">
+                    <label for="q2a" class="option-box">Gaming</label>
+                    
+                    <input type="radio" id="q2b" name="question2" value="B">
+                    <label for="q2b" class="option-box">Drawing</label>
+                    
+                    <input type="radio" id="q2c" name="question2" value="C">
+                    <label for="q2c" class="option-box">Outdoor Adventures</label>
+                    
+                    <input type="radio" id="q2d" name="question2" value="D">
+                    <label for="q2d" class="option-box">Listening to music</label>
+                    
+                    <input type="radio" id="q2e" name="question2" value="E">
+                    <label for="q2e" class="option-box">Watching anime/movies</label>
+                </div>
+                <button type="button" onclick="previousQuestion(1)">Previous</button>
+                <button type="button" onclick="nextQuestion(3)">Next</button>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question-page" id="question3" style="display: none;">
+                <p>3. What kind of books do you like?</p>
+                <div class="options">
+                    <input type="radio" id="q3a" name="question3" value="A">
+                    <label for="q3a" class="option-box">Fantasy</label>
+                    
+                    <input type="radio" id="q3b" name="question3" value="B">
+                    <label for="q3b" class="option-box">Mystery</label>
+                    
+                    <input type="radio" id="q3c" name="question3" value="C">
+                    <label for="q3c" class="option-box">Romance</label>
+                    
+                    <input type="radio" id="q3d" name="question3" value="D">
+                    <label for="q3d" class="option-box">Science Fiction</label>
+                    
+                    <input type="radio" id="q3e" name="question3" value="E">
+                    <label for="q3e" class="option-box">Non-Fiction</label>
+                </div>
+                <button type="button" onclick="previousQuestion(2)">Previous</button>
+                <button type="button" onclick="nextQuestion(4)">Next</button>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question-page" id="question4" style="display: none;">
+                <p>4. How do you feel about heights?</p>
+                <div class="options">
+                    <input type="radio" id="q4a" name="question4" value="A">
+                    <label for="q4a" class="option-box">I Love Them</label>
+                    
+                    <input type="radio" id="q4b" name="question4" value="B">
+                    <label for="q4b" class="option-box">I Tolerate Them</label>
+                    
+                    <input type="radio" id="q4c" name="question4" value="C">
+                    <label for="q4c" class="option-box">They Make Me Nervous</label>
+                    
+                    <input type="radio" id="q4d" name="question4" value="D">
+                    <label for="q4d" class="option-box">I Avoid Them</label>
+                    
+                    <input type="radio" id="q4e" name="question4" value="E">
+                    <label for="q4e" class="option-box">I Am Terrified</label>
+                </div>
+                <button type="button" onclick="previousQuestion(3)">Previous</button>
+                <button type="button" onclick="nextQuestion(5)">Next</button>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="question-page" id="question5" style="display: none;">
+                <p>5. What's your favorite type of music?</p>
+                <div class="options">
+                    <input type="radio" id="q5a" name="question5" value="A">
+                    <label for="q5a" class="option-box">Rock</label>
+                    
+                    <input type="radio" id="q5b" name="question5" value="B">
+                    <label for="q5b" class="option-box">Pop</label>
+                    
+                    <input type="radio" id="q5c" name="question5" value="C">
+                    <label for="q5c" class="option-box">Hip-Hop</label>
+                    
+                    <input type="radio" id="q5d" name="question5" value="D">
+                    <label for="q5d" class="option-box">Classical</label>
+                    
+                    <input type="radio" id="q5e" name="question5" value="E">
+                    <label for="q5e" class="option-box">Jazz</label>
+                </div>
+                <button type="button" onclick="previousQuestion(4)">Previous</button>
+                <button type="button" onclick="nextQuestion(6)">Next</button>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="question-page" id="question6" style="display: none;">
+                <p>6. What do you do on weekends?</p>
+                <div class="options">
+                    <input type="radio" id="q6a" name="question6" value="A">
+                    <label for="q6a" class="option-box">Play Games</label>
+                    
+                    <input type="radio" id="q6b" name="question6" value="B">
+                    <label for="q6b" class="option-box">Explore Nature</label>
+                    
+                    <input type="radio" id="q6c" name="question6" value="C">
+                    <label for="q6c" class="option-box">Relax at Home</label>
+                    
+                    <input type="radio" id="q6d" name="question6" value="D">
+                    <label for="q6d" class="option-box">Socialize with Friends</label>
+                    
+                    <input type="radio" id="q6e" name="question6" value="E">
+                    <label for="q6e" class="option-box">Watch Movies</label>
+                </div>
+                <button type="button" onclick="previousQuestion(5)">Previous</button>
+                <button type="button" onclick="nextQuestion(7)">Next</button>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="question-page" id="question7" style="display: none;">
+                <p>7. How do you feel about spicy food?</p>
+                <div class="options">
+                    <input type="radio" id="q7a" name="question7" value="A">
+                    <label for="q7a" class="option-box">I Love It</label>
+                    
+                    <input type="radio" id="q7b" name="question7" value="B">
+                    <label for="q7b" class="option-box">It's Okay</label>
+                    
+                    <input type="radio" id="q7c" name="question7" value="C">
+                    <label for="q7c" class="option-box">I Tolerate It</label>
+                    
+                    <input type="radio" id="q7d" name="question7" value="D">
+                    <label for="q7d" class="option-box">I Avoid It</label>
+                    
+                    <input type="radio" id="q7e" name="question7" value="E">
+                    <label for="q7e" class="option-box">I Can't Stand It</label>
+                </div>
+                <button type="button" onclick="previousQuestion(6)">Previous</button>
+                <button type="button" onclick="nextQuestion(8)">Next</button>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="question-page" id="question8" style="display: none;">
+                <p>8. What's your ideal vacation?</p>
+                <div class="options">
+                    <input type="radio" id="q8a" name="question8" value="A">
+                    <label for="q8a" class="option-box">Beach Relaxation</label>
+                    
+                    <input type="radio" id="q8b" name="question8" value="B">
+                    <label for="q8b" class="option-box">Adventure Trip</label>
+                    
+                    <input type="radio" id="q8c" name="question8" value="C">
+                    <label for="q8c" class="option-box">City Exploration</label>
+                    
+                    <input type="radio" id="q8d" name="question8" value="D">
+                    <label for="q8d" class="option-box">Cultural Experience</label>
+                    
+                    <input type="radio" id="q8e" name="question8" value="E">
+                    <label for="q8e" class="option-box">Relaxing in Nature</label>
+                </div>
+                <button type="button" onclick="previousQuestion(7)">Previous</button>
+                <button type="button" onclick="nextQuestion(9)">Next</button>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="question-page" id="question9" style="display: none;">
+                <p>9. How do you feel about horror?</p>
+                <div class="options">
+                    <input type="radio" id="q9a" name="question9" value="A">
+                    <label for="q9a" class="option-box">I Love It</label>
+                    
+                    <input type="radio" id="q9b" name="question9" value="B">
+                    <label for="q9b" class="option-box">It's Interesting</label>
+                    
+                    <input type="radio" id="q9c" name="question9" value="C">
+                    <label for="q9c" class="option-box">It's Okay</label>
+                    
+                    <input type="radio" id="q9d" name="question9" value="D">
+                    <label for="q9d" class="option-box">I Avoid It</label>
+                    
+                    <input type="radio" id="q9e" name="question9" value="E">
+                    <label for="q9e" class="option-box">I Can't Stand It</label>
+                </div>
+                <button type="button" onclick="previousQuestion(8)">Previous</button>
+                <button type="button" onclick="nextQuestion(10)">Next</button>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="question-page" id="question10" style="display: none;">
+                <p>10. Which type of weather do you prefer?</p>
+                <div class="options">
+                    <input type="radio" id="q10a" name="question10" value="A">
+                    <label for="q10a" class="option-box">Sunny</label>
+                    
+                    <input type="radio" id="q10b" name="question10" value="B">
+                    <label for="q10b" class="option-box">Rainy</label>
+                    
+                    <input type="radio" id="q10c" name="question10" value="C">
+                    <label for="q10c" class="option-box">Cloudy</label>
+                    
+                    <input type="radio" id="q10d" name="question10" value="D">
+                    <label for="q10d" class="option-box">Windy</label>
+                    
+                    <input type="radio" id="q10e" name="question10" value="E">
+                    <label for="q10e" class="option-box">Snowy</label>
+                </div>
+                <button type="button" onclick="previousQuestion(9)">Previous</button>
+                <button type="button" onclick="nextQuestion(11)">Next</button>
+            </div>
+            <!--Question 11-->
+            <div class="question-page" id="question11" style="display: none;">
+                <p>11. Which of these activities do you dislike the most?</p>
+                <div class="options">
+                    <input type="radio" id="q11a" name="question11" value="A">
+                    <label for="q11a" class="option-box">Doing math or solving puzzles</label>
+
+                    <input type="radio" id="q11b" name="question11" value="B">
+                    <label for="q11b" class="option-box">Spending time in dark or scary places</label>
+
+                    <input type="radio" id="q11c" name="question11" value="C">
+                    <label for="q11c" class="option-box">Dealing with bugs or insects</label>
+
+                    <input type="radio" id="q11d" name="question11" value="D">
+                    <label for="q11d" class="option-box">Cooking and doing household chores</label>
+
+                    <input type="radio" id="q11e" name="question11" value="E">
+                    <label for="q11e" class="option-box">Loud and crowded places</label>
+                </div>
+                <button type="button" onclick="previousQuestion(10)">Previous</button>
+                <button type="button" onclick="nextQuestion(12)">Next</button>
+            </div>
+            <!--Question 12-->
+            <div class="question-page" id="question12" style="display: none;">
+                <p>12. What's your favorite color palette</p>
+                <div class="options">
+                    <input type="radio" id="q12a" name="question12" value="A">
+                    <label for="q12a" class="option-box">Dark and edgy colors</label>
+
+                    <input type="radio" id="q12b" name="question12" value="B">
+                    <label for="q12b" class="option-box">Pastels or muted tones</label>
+
+                    <input type="radio" id="q12c" name="question12" value="C">
+                    <label for="q12c" class="option-box">Bright and bold colors</label>
+
+                    <input type="radio" id="q12d" name="question12" value="D">
+                    <label for="q12d" class="option-box">Natural, earthy tones</label>
+
+                    <input type="radio" id="q12e" name="question12" value="E">
+                    <label for="q12e" class="option-box">Elegant and refined colors</label>
+                </div>
+                <button type="button" onclick="previousQuestion(11)">Previous</button>
+                <button type="button" onclick="nextQuestion(13)">Next</button>
+            </div>
+            <!--Question 13-->
+            <div class="question-page" id="question13" style="display: none;">
+                <p>13. What kind of environment do you thrive in?</p>
+                <div class="options">
+                    <input type="radio" id="q13a" name="question13" value="A">
+                    <label for="q13a" class="option-box">A competitive, fast-paced setting</label>
+
+                    <input type="radio" id="q13b" name="question13" value="B">
+                    <label for="q13b" class="option-box">A calm, peaceful atmosphere</label>
+
+                    <input type="radio" id="q13c" name="question13" value="C">
+                    <label for="q13c" class="option-box">A social, lively environment</label>
+
+                    <input type="radio" id="q13d" name="question13" value="D">
+                    <label for="q13d" class="option-box">A quiet, solitary space</label>
+
+                    <input type="radio" id="q13e" name="question13" value="E">
+                    <label for="q13e" class="option-box">A creative, artistic space</label>
+                </div>
+                <button type="button" onclick="previousQuestion(12)">Previous</button>
+                <button type="button" onclick="nextQuestion(14)">Next</button>
+            </div>
+            <!--Question 14-->
+            <div class="question-page" id="question14" style="display: none;">
+                <p>14. What is your approach to problem-solving?</p>
+                <div class="options">
+                    <input type="radio" id="q14a" name="question14" value="A">
+                    <label for="q14a" class="option-box">Jump in and figure it out as you go</label>
+
+                    <input type="radio" id="q14b" name="question14" value="B">
+                    <label for="q14b" class="option-box"> Carefully analyze and plan ahead</label>
+
+                    <input type="radio" id="q14c" name="question14" value="C">
+                    <label for="q14c" class="option-box">Collaborate with others and brainstorm </label>
+
+                    <input type="radio" id="q14d" name="question14" value="D">
+                    <label for="q14d" class="option-box">Use intuition and go with the flow</label>
+
+                    <input type="radio" id="q14e" name="question14" value="E">
+                    <label for="q14e" class="option-box">Find creative, unconventional solutions</label>
+                </div>
+                <button type="button" onclick="previousQuestion(13)">Previous</button>
+                <button type="button" onclick="nextQuestion(15)">Next</button>
+            </div>
+                   <!--Question 15-->
+                   <div class="question-page" id="question15" style="display: none;">
+                    <p>15. What do you value most in a person?</p>
+                    <div class="options">
+                        <input type="radio" id="q15a" name="question15" value="A">
+                        <label for="q15a" class="option-box">Intelligence</label>
+    
+                        <input type="radio" id="q15b" name="question15" value="B">
+                        <label for="q15b" class="option-box">Kindness</label>
+    
+                        <input type="radio" id="q15c" name="question15" value="C">
+                        <label for="q15c" class="option-box">Loyalty</label>
+    
+                        <input type="radio" id="q15d" name="question15" value="D">
+                        <label for="q15d" class="option-box">Sense of humor</label>
+    
+                        <input type="radio" id="q15e" name="question15" value="E">
+                        <label for="q15e" class="option-box">Honesty</label>
+                    </div>
+                    <button type="button" onclick="previousQuestion(14)">Previous</button>
+                    <button type="button" onclick="showLoadingAnimation()">Next</button>
+                </div>
+                
+                 
+                    
+               
+
+        </form>
+       
+        <!-- Loading Animation -->
+        <div id="loading" style="display: none;">
+            <div class="spinner"></div>
+            <p>Calculating your result...</p>
+        </div>
+
+        <!-- Result Display -->
+        <div id="result" style="display: none;">
+            <img id="resultImage" src="" alt="Result Image" style="display:none; max-width: 100%;">
+            <p id="resultText"></p>
+        </div>
+    </div>
+    <audio id="music" src="https://dl.dropbox.com/scl/fi/1u7w9gae3hoay789hnf77/Breaking-Dimensions-Instrumental.mp3?rlkey=wwubm3wu8ieud2m55262wcp6p&st=titouufh&dl=0" autoplay loop>
+        Your browser does not support the audio element.
+    </audio>
+    <script src="holoquiz.js"></script>
+</body>
+</html>
+

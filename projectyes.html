@@ -1,0 +1,177 @@
+<html>
+  <head>
+    <title>Movie Selector</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <style>
+    *{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+
+body{
+  font-family: Open Sans;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+  background: rgb(236, 152, 236);
+  background: linear-gradient(90deg, rgb(241, 9, 152) 0%, rgb(241, 151, 229) 52%, rgb(245, 9, 245) 100%);
+  background-size: cover;
+}
+
+.mainbox{
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+.mainbox:after{
+  position: absolute;
+  content: '';
+  width: 32px;
+  height: 32px;
+  background: url('https://i.ibb.co/NYh10dg/arrow.png') no-repeat;
+  background-size: 32px;
+  right: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.box{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 50%;
+  border: 10px solid #fff;
+  overflow: hidden;
+  transition: all ease 5s;
+}
+span{
+  width: 50%;
+  height: 50%;
+  display: inline-block;
+  position: absolute;
+}
+.span1{
+  clip-path: polygon(0 92%, 100% 50%, 0 8%);
+  background-color: #fffb00;
+  top: 120px;
+  left: 0;
+}
+.span2{
+  clip-path: polygon(100% 92%, 0 50%, 100% 8%);
+  background-color: #ff4fa1;
+  top: 120px;
+  right: 0;
+}
+.span3{
+  clip-path: polygon(50% 0%, 8% 100%, 92% 100%);
+  background-color: #ffaa00;
+  bottom: 0;
+  left: 120px;
+}
+.span4{
+  clip-path: polygon(50% 100%, 92% 0, 8% 0);
+  background-color: #22ff00;
+  top: 0;
+  left: 120px;
+}
+
+
+.box1 .span3 b{
+   transform: translate(-50%, -50%) rotate(-270deg);
+}
+.box1 .span1 b,
+.box2 .span1 b{
+  transform: translate(-50%, -50%) rotate(185deg);
+}
+.box2 .span3 b{
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+.box1 .span4 b,
+.box2 .span4 b{
+  transform: translate(-50%, -50%) rotate(-85deg);
+}
+
+.box2{
+  width: 100%;
+  height: 100%;
+  transform: rotate(-135deg);
+}
+span b{
+  font-size: 24px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.spin{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  background-color: #001aff;
+  color: #fff;
+  box-shadow: 0 5px 20px #000;
+  font-weight: bold;
+  font-size: 22px;
+  cursor: pointer;
+}
+.spin:active{
+  width: 70px;
+  height: 70px;
+  font-size: 20px;
+}
+
+.mainbox.animate:after{
+  animation: animateArrow 0.7s ease infinite;
+}
+@keyframes animateArrow{
+  50%{
+    right: -40px;
+  }
+}
+.gif {
+    position: fixed;
+    margin-left: 60%;
+}
+  </style>
+  <body>
+
+    <h1><center> Really, you love me? Because you love me, here's something for you.</center><br>
+        <div class="gif">
+            <img src="https://i.ibb.co/9WjkGHv/penguinz0-yeah-baby.gif" alt="penguinz0-yeah-baby" width="300" height="300">
+        </div>
+    
+	<div id="mainbox" class="mainbox">
+		<div id="box" class="box">
+			<div class="box1">
+				<span class="span1"><b>Iphone</b></span>
+				<span class="span2"><b>flowers</b></span>
+				<span class="span3"><b>Necklace</b></span>
+				<span class="span4"><b>kiss on forehead</b></span>
+			</div>
+			<div class="box2">
+				<span class="span1"><b>Head pat</b></span>
+				<span class="span2"><b>Mr. beast chocolate</b></span>
+				<span class="span3"><b>Movie ticket</b></span>
+				<span class="span4"><b>Slap me on the face</b></span>
+			</div>
+		</div>
+
+		<button class="spin" onclick="myfunction()">SPIN</button>
+	</div>
+
+  
+  <script src="project.js"></script>
+  </body>
+</html>
